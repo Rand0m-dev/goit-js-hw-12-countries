@@ -6,17 +6,19 @@
   "homepage": "https://rand0m-dev.github.io/goit-js-hw-12-countries/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/Rand0m-dev/goit-js-hw-12-countries.git"
   },
   "keywords": [],
   "author": "Kirienko Ihor <flesh0099@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/Rand0m-dev/goit-js-hw-12-countries/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
@@ -26,8 +28,12 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
+    "@pnotify/confirm": "^5.2.0",
     "@pnotify/core": "^5.2.0",
     "@pnotify/mobile": "^5.2.0",
+    "gh-pages": "^3.2.0",
+    "handlebars": "^4.7.7",
+    "lodash.debounce": "^4.0.8",
     "material-design-icons": "^3.0.1"
   }
 }
